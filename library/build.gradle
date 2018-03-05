@@ -6,7 +6,7 @@ dependencies {
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
 
     sourceSets {
         main {
@@ -30,5 +30,10 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
+    }
+
+    buildTypes {
+        debug {}
+        release {}
     }
 }
